@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: primuslearning
+  name: primuslearnings
 spec:
   selector:
-    app: primuslearning
+    app: primuslearnings
   ports:
     - protocol: TCP
-      port: 80
-      targetPort: 8080
+      port: 8080
+      targetPort: 8180
   type: LoadBalancer
